@@ -53,7 +53,7 @@ jobs:
         echo "GITHUB_REF_NAME=$(echo ${GITHUB_REF##*/})" >> $GITHUB_ENV
         echo "COMPOSER_BIN=$(echo ${GITHUB_WORKSPACE}/vendor/bin)" >> $GITHUB_ENV
         echo "BLT_DIR=$(echo ${GITHUB_WORKSPACE}/vendor/acquia/blt)" >> $GITHUB_ENV
-        echo "SCRIPT_DIR=$(echo ${GITHUB_WORKSPACE}/vendor/alexku/blt-github-actions/scripts/github-actions)" >> $GITHUB_ENV
+        echo "SCRIPT_DIR=$(echo ${GITHUB_WORKSPACE}/vendor/accessdigital/blt-github-actions/scripts/github-actions)" >> $GITHUB_ENV
 
     # Caching based on https://github.com/marketplace/actions/composer-php-actions#caching-dependencies-for-faster-builds
     - name: Determine Composer cache directory

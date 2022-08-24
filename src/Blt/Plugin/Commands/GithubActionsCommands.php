@@ -18,7 +18,7 @@ class GithubActionsCommands extends BltTasks {
    * @throws \Acquia\Blt\Robo\Exceptions\BltException
    */
   public function azureInit() {
-    $source = $this->getConfigValue('repo.root') . '/vendor/alexku/blt-github-actions/workflows';
+    $source = $this->getConfigValue('repo.root') . '/vendor/accessdigital/blt-github-actions/workflows';
     $destination = $this->getConfigValue('repo.root') . '/.github/workflows';
 
     $result = $this->taskFilesystemStack()
